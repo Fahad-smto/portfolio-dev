@@ -5,7 +5,13 @@ const About = () => {
     <section id="about" className="bg-gray-50 py-16">
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
         
-       
+        {/* Left Side Image */}
+        <motion.div
+          initial={{ opacity: 0, x: -50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+          className="flex justify-center"
         >
           <img
             src="/banner.jpg"
